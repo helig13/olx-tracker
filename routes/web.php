@@ -15,7 +15,7 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('tracker');
 });
 Route::get('/tracker', [SpiderController::class, 'index'])->name('tracker-form');
 Route::post('/tracker', [SpiderController::class, 'subscribe'])->name('tracker-subscribe');
